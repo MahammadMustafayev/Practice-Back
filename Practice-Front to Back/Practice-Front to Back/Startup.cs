@@ -44,6 +44,9 @@ namespace Practice_Front_to_Back
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{area:exists}/{controller=Dashboard}/{action=Index}/{id?}");
                 endpoints.MapDefaultControllerRoute();
             });
         }

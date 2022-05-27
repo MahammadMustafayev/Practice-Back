@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XFyh6g3+cHl/ejqdd8yxZzMCNgY0W2KJx3pHa2vM/bzXqMoYOudgF+arqMHq76Ljbp2UWqdKJOCmvw0SgZ1hRA==",
+  "dgSpecHash": "QPG8DFv0Lwf73H/yPwVM692ulLQOBD0T/FrDvbSeBUvNKJ6lmHRACjp13nOncC+zR5dUOs7wN0xVNHfdEw1TaQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\tu7ekdm78\\Desktop\\Practice-Front to Back\\Practice-Front to Back\\Practice-Front to Back.csproj",
+  "projectFilePath": "C:\\Users\\tu7ekdm78\\Desktop\\Practice-Back\\Practice-Front to Back\\Practice-Front to Back\\Practice-Front to Back.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tu7ekdm78\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\tu7ekdm78\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",

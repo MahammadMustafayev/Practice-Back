@@ -18,6 +18,30 @@ namespace Practice_Front_to_Back.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("Practice_Front_to_Back.Models.Feature", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Icon")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Subtitle")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Features");
+                });
+
             modelBuilder.Entity("Practice_Front_to_Back.Models.Slider", b =>
                 {
                     b.Property<int>("Id")
@@ -31,8 +55,17 @@ namespace Practice_Front_to_Back.Migrations
                     b.Property<string>("Image")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("Order")
+                        .HasColumnType("int");
+
                     b.Property<double>("Price")
                         .HasColumnType("float");
+
+                    b.Property<string>("RedirectUrl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("RedirectUrlText")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Title1")
                         .HasColumnType("nvarchar(max)");

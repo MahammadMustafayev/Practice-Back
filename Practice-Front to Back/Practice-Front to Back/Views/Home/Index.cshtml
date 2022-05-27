@@ -1,4 +1,4 @@
-﻿@model List<Slider>
+﻿@model HomeVM
 @{
     ViewData["Title"] = "Index";
 }
@@ -15,9 +15,9 @@
                             "slidesToShow": 1,
                             "dots":true
                             }'>
-        @foreach (Slider item in Model)
+        @foreach (Slider item in Model.Sliders)
         {
-            if (@item.Id % 2 == 0)
+            if (@item.Order % 2 == 0)
             {
                 <div class="single-slide bg-shade-whisper  ">
                     <div class="container">
@@ -33,8 +33,8 @@
                                             @item.Title2
                                         </h1>
                                         <h2>@item.Description</h2>
-                                        <a href="shop-grid.html" class="btn btn-outlined--primary">
-                                            $@item.Price - Order Now!
+                                        <a href="@item.RedirectUrl" class="btn btn-outlined--primary">
+                                            $@item.Price - @item.RedirectUrlText!
                                         </a>
                                     </div>
                                 </div>
@@ -69,53 +69,7 @@
                     </div>
                 </div>
             }
-        }
-        @*<div class="single-slide bg-shade-whisper  ">
-            <div class="container">
-                <div class="home-content text-center text-sm-left position-relative">
-                    <div class="hero-partial-image image-right">
-                        <img src="~/image/bg-images/home-slider-2-ai.png" alt="">
-                    </div>
-                    <div class="row no-gutters ">
-                        <div class="col-xl-6 col-md-6 col-sm-7">
-                            <div class="home-content-inner content-left-side">
-                                <h1>
-                                    H.G. Wells<br>
-                                    De Vengeance
-                                </h1>
-                                <h2>Cover Up Front Of Books and Leave Summary</h2>
-                                <a href="shop-grid.html" class="btn btn-outlined--primary">
-                                    $78.09 - Order Now!
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="single-slide bg-ghost-white">
-            <div class="container">
-                <div class="home-content text-center text-sm-left position-relative">
-                    <div class="hero-partial-image image-left">
-                        <img src="~/image/bg-images/home-slider-1-ai.png" alt="">
-                    </div>
-                    <div class="row align-items-center justify-content-start justify-content-md-end">
-                        <div class="col-lg-6 col-xl-7 col-md-6 col-sm-7">
-                            <div class="home-content-inner content-right-side">
-                                <h1>
-                                    J.D. Kurtness <br>
-                                    De Vengeance
-                                </h1>
-                                <h2>Cover Up Front Of Books and Leave Summary</h2>
-                                <a href="shop-grid.html" class="btn btn-outlined--primary">
-                                    $78.09 - Learn More
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>*@
+        }   
     </div>
 </section>
 <!--=================================
@@ -124,50 +78,22 @@ Home Features Section
 <section class="mb--30">
     <div class="container">
         <div class="row">
+            @foreach (Feature item in Model.Features)
+            {
             <div class="col-xl-3 col-md-6 mt--30">
                 <div class="feature-box h-100">
                     <div class="icon">
-                        <i class="fas fa-shipping-fast"></i>
+                        <i class="@item.Icon"></i>
                     </div>
                     <div class="text">
-                        <h5>Free Shipping Item</h5>
-                        <p> Orders over $500</p>
+                        <h5>@item.Title</h5>
+                        <p> @item.Subtitle</p>
                     </div>
                 </div>
             </div>
-            <div class="col-xl-3 col-md-6 mt--30">
-                <div class="feature-box h-100">
-                    <div class="icon">
-                        <i class="fas fa-redo-alt"></i>
-                    </div>
-                    <div class="text">
-                        <h5>Money Back Guarantee</h5>
-                        <p>100% money back</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-md-6 mt--30">
-                <div class="feature-box h-100">
-                    <div class="icon">
-                        <i class="fas fa-piggy-bank"></i>
-                    </div>
-                    <div class="text">
-                        <h5>Cash On Delivery</h5>
-                        <p>Lorem ipsum dolor amet</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-md-6 mt--30">
-                <div class="feature-box h-100">
-                    <div class="icon">
-                        <i class="fas fa-life-ring"></i>
-                    </div>
-                    <div class="text">
-                        <h5>Help & Support</h5>
-                        <p>Call us : + 0123.4567.89</p>
-                    </div>
-                </div>
-            </div>
+
+            }
+            
         </div>
     </div>
 </section>

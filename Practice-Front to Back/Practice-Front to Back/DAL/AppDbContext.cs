@@ -13,5 +13,6 @@ namespace Practice_Front_to_Back.DAL
         {
         }
         public DbSet<Slider> Sliders { get; set; }
+        public DbSet<Feature> Features { get; set; }
     }
 }

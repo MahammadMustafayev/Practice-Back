@@ -8481,11 +8481,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tu7ekdm78\\Desktop\\Practice-Front to Back\\Practice-Front to Back\\Practice-Front to Back.csproj",
+      "projectUniqueName": "C:\\Users\\tu7ekdm78\\Desktop\\Practice-Back\\Practice-Front to Back\\Practice-Front to Back\\Practice-Front to Back.csproj",
       "projectName": "Practice-Front to Back",
-      "projectPath": "C:\\Users\\tu7ekdm78\\Desktop\\Practice-Front to Back\\Practice-Front to Back\\Practice-Front to Back.csproj",
+      "projectPath": "C:\\Users\\tu7ekdm78\\Desktop\\Practice-Back\\Practice-Front to Back\\Practice-Front to Back\\Practice-Front to Back.csproj",
       "packagesPath": "C:\\Users\\tu7ekdm78\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tu7ekdm78\\Desktop\\Practice-Front to Back\\Practice-Front to Back\\obj\\",
+      "outputPath": "C:\\Users\\tu7ekdm78\\Desktop\\Practice-Back\\Practice-Front to Back\\Practice-Front to Back\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -12,6 +12,9 @@ namespace Practice_Front_to_Back.Models
         public string Title2 { get; set; }
         public string Description { get; set; }
         public double Price { get; set; }
+        public string RedirectUrl { get; set; }
+        public string RedirectUrlText { get; set; }
         public string Image { get; set; }
+        public int Order { get; set; }
     }
 }
