@@ -295,9 +295,9 @@ C:\Users\tu7ekdm78\Desktop\Practice-Back\Practice-Front to Back\Practice-Front t
 C:\Users\tu7ekdm78\Desktop\Practice-Back\Practice-Front to Back\Practice-Front to Back\obj\Debug\netcoreapp3.1\Razor\Areas\Manage\Views\Shared\_ManageLayout.cshtml.g.cs
 C:\Users\tu7ekdm78\Desktop\Practice-Back\Practice-Front to Back\Practice-Front to Back\obj\Debug\netcoreapp3.1\Razor\Areas\Manage\Views\_ViewStart.cshtml.g.cs
 C:\Users\tu7ekdm78\Desktop\Practice-Back\Practice-Front to Back\Practice-Front to Back\obj\Debug\netcoreapp3.1\Razor\Areas\Manage\Views\_ViewImports.cshtml.g.cs
-C:\Users\tu7ekdm78\Desktop\Practice-Back\Practice-Front to Back\Practice-Front to Back\obj\Debug\netcoreapp3.1\Razor\Areas\Manage\Views\Slider\Index.cshtml.g.cs
-C:\Users\tu7ekdm78\Desktop\Practice-Back\Practice-Front to Back\Practice-Front to Back\obj\Debug\netcoreapp3.1\Razor\Areas\Manage\Views\Slider\Create.cshtml.g.cs
-C:\Users\tu7ekdm78\Desktop\Practice-Back\Practice-Front to Back\Practice-Front to Back\obj\Debug\netcoreapp3.1\Razor\Areas\Manage\Views\Slider\Edit.cshtml.g.cs
 C:\Users\tu7ekdm78\Desktop\Practice-Back\Practice-Front to Back\Practice-Front to Back\obj\Debug\netcoreapp3.1\Razor\Areas\Manage\Views\Feature\Index.cshtml.g.cs
 C:\Users\tu7ekdm78\Desktop\Practice-Back\Practice-Front to Back\Practice-Front to Back\obj\Debug\netcoreapp3.1\Razor\Areas\Manage\Views\Feature\Create.cshtml.g.cs
 C:\Users\tu7ekdm78\Desktop\Practice-Back\Practice-Front to Back\Practice-Front to Back\obj\Debug\netcoreapp3.1\Razor\Areas\Manage\Views\Feature\Edit.cshtml.g.cs
+C:\Users\tu7ekdm78\Desktop\Practice-Back\Practice-Front to Back\Practice-Front to Back\obj\Debug\netcoreapp3.1\Razor\Areas\Manage\Views\Slider\Index.cshtml.g.cs
+C:\Users\tu7ekdm78\Desktop\Practice-Back\Practice-Front to Back\Practice-Front to Back\obj\Debug\netcoreapp3.1\Razor\Areas\Manage\Views\Slider\Create.cshtml.g.cs
+C:\Users\tu7ekdm78\Desktop\Practice-Back\Practice-Front to Back\Practice-Front to Back\obj\Debug\netcoreapp3.1\Razor\Areas\Manage\Views\Slider\Edit.cshtml.g.cs

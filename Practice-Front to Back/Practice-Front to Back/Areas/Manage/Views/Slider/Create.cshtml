@@ -1,11 +1,11 @@
-﻿
-@model Slider
+﻿@model Slider
 @{
     ViewData["Title"] = "Create";
+    Layout = "~/Areas/Manage/Views/Shared/_ManageLayout.cshtml";
 }
 
 <div class="container-fluid">
-    <form method="post">
+    <form method="post" enctype="multipart/form-data">
         <div class="form-row">
             <div class="form-group col-md-6">
                 <label asp-for="Title1">Title1</label>
@@ -32,6 +32,10 @@
             <div class="form-group col-md-4">
                 <label asp-for="Order">Order</label>
                 <input asp-for="Order" class="form-control" placeholder="Order">
+            </div>
+            <div class="form-group col-md-4">
+                <label asp-for="Photo"></label>
+                <input type="file" asp-for="Photo" class="form-control" placeholder="Photo">
             </div>
         </div>
         <div class="form-group">

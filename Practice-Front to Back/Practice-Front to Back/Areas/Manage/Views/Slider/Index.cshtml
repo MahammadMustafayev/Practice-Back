@@ -1,5 +1,9 @@
-﻿
-@model List<Slider>
+﻿@model List<Slider>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Manage/Views/Shared/_ManageLayout.cshtml";
+}
+
 @{
     ViewData["Title"] = "Index";
     int order = 0;
@@ -34,7 +38,7 @@
                     <td>@slider.Description</td>
                     <td>@slider.Order</td>
                     <td>@slider.Price</td>
-                    <td><img src="~/assets/image/bg-images/@slider.Image" style="max-width:100px" /></td>
+                    <td><img src="~/image/bg-images/@slider.Image" style="max-width:100px" /></td>
                     <td>
                         <a asp-action="Edit" asp-controller="Slider" asp-route-id="@slider.Id" class="btn btn-warning">Edit</a>
                         <a asp-action="Delete" asp-controller="Slider" asp-route-id="@slider.Id" class="btn btn-danger btn-sweet-delete">Delete</a>

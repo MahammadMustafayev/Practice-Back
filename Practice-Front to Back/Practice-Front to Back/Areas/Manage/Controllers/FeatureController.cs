@@ -51,5 +51,13 @@ namespace Practice_Front_to_Back.Areas.Manage.Controllers
             _context.SaveChanges();
             return RedirectToAction(nameof(Index));
         }
+        public IActionResult Delete(int id)
+        {
+            Feature feature = _context.Features.Find(id);
+            if (feature == null) return NotFound();
+            feature.IsDeleted = true;
+            _context.SaveChanges();
+            return RedirectToAction(nameof(Index));
+        }
     }
 }
