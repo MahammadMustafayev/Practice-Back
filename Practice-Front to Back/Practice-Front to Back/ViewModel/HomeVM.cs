@@ -10,5 +10,9 @@ namespace Practice_Front_to_Back.ViewModel
     {
         public List<Slider> Sliders { get; set; }
         public List<Feature> Features { get; set; }
+        public List<Product> Products { get; set; }
+        public List<ProductImages> ProductImages { get; set; }
+        public List<Genre> Genres { get; set; }
+        public List<Author> Authors { get; set; }
     }
 }

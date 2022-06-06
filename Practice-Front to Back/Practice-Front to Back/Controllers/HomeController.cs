@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Practice_Front_to_Back.DAL;
 using Practice_Front_to_Back.Models;
 using Practice_Front_to_Back.ViewModel;
@@ -20,7 +21,8 @@ namespace Practice_Front_to_Back.Controllers
             HomeVM homeVM = new HomeVM()
             {
                 Sliders = _context.Sliders.ToList(),
-                Features = _context.Features.ToList()
+                Features = _context.Features.Take(4).ToList(),
+                Products=_context.Products.Include(x => x.ProductImages).Include(x => x.Genre).Include(x => x.Author).ToList()
             }; 
             return View(homeVM);
         }

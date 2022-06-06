@@ -45,7 +45,7 @@ namespace Practice_Front_to_Back.Areas.Manage.Controllers
             }
             slider.Image = await slider.Photo.SaveFileAsync(Path.Combine(_env.WebRootPath,"image","bg-images"));
             await _context.AddAsync(slider);
-           await _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
         public IActionResult Edit(int id)
@@ -55,6 +55,7 @@ namespace Practice_Front_to_Back.Areas.Manage.Controllers
             return View(slider);
         }
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Edit(Slider slider)
         {
             Slider existslider = _context.Sliders.FirstOrDefault(x => x.Id == slider.Id);
@@ -76,7 +77,7 @@ namespace Practice_Front_to_Back.Areas.Manage.Controllers
             Slider slider = _context.Sliders.Find(id);
             if (slider == null) return NotFound();
             if (slider.Id == id)
-
+            
             _context.Sliders.Remove(slider);
             _context.SaveChanges();
 

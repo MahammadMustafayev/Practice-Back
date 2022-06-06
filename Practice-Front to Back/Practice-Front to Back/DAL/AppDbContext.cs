@@ -14,5 +14,9 @@ namespace Practice_Front_to_Back.DAL
         }
         public DbSet<Slider> Sliders { get; set; }
         public DbSet<Feature> Features { get; set; }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<Genre> Genres { get; set; }
+        public DbSet<Author> Authors { get; set; }
+        public DbSet<ProductImages> ProductImages { get; set; }
     }
 }
