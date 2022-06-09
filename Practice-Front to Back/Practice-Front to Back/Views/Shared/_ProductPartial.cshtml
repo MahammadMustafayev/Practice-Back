@@ -15,10 +15,10 @@
             </div>
             <div class="product-card--body">
                 <div class="card-image">
-                    <img src="~/image/products/product-1.jpg" alt="">
+                    <img src="~/image/products/@item.ProductImages.FirstOrDefault(x=>x.IsPoster==true).Image" alt="">
                     <div class="hover-contents">
                         <a href="product-details.html" class="hover-image">
-                            <img src="~/image/products/product-1.jpg" alt="">
+                            <img src="~/image/products/@item.ProductImages.FirstOrDefault(x=>x.IsPoster==false).Image" alt="">
                         </a>
                         <div class="hover-btns">
                             <a href="cart.html" class="single-btn">
